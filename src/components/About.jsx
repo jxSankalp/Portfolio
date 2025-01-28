@@ -23,29 +23,21 @@ function About() {
       </div>
       <div className="w-[60%] mx-auto px-1 flex py-20">
         {/* Left Column - Title and CTA */}
-        <div className="flex flex-col justify-start w-1/2 gap-[5vh]">
+        <div className="flex flex-col justify-start w-1/2 gap-[5vh] items-center">
           <div className="text-5xl font-bold text-gray-900 mb-8">
             Hi, I&apos;m Sankalp.
           </div>
-          <img
-            ref={ref}
-            src={hii}
-            className="w-[8rem]"
-          />
+          <img ref={ref} src={hii} className="w-[8rem] " />
         </div>
 
         {/* Right Column - Description */}
         <div className="flex flex-col space-y-8 w-1/2">
           <p className="text-xl lg:text-2xl text-gray-800 leading-relaxed">
-            I&apos;m a 17 year-old passionate fullstack web developer dedicated
-            to turning ideas into creative solutions. I specialize in creating
-            seamless and intuitive user experiences.
-          </p>
-          <p className="text-xl lg:text-2xl text-gray-800 leading-relaxed">
-            I&apos;m involved in every step of the process: from discovery and
-            design to development, testing, and deployment. I focus on
-            delivering high-quality, scalable results that drive positive user
-            experiences.
+            I&apos;m a passionate Full-Stack Web Developer and an aspiring
+            Software Engineer, currently in my second year of studies. I enjoy
+            building scalable and efficient solutions, and I&apos;m always eager
+            to learn and take on real-world challenges to grow my skills and
+            make an impact.
           </p>
         </div>
       </div>
