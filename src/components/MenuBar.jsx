@@ -48,7 +48,7 @@ const MenuBar = () => {
           />
         )}
       </AnimatePresence>
-      <div className="relative z-[100]">
+      <div className="relative z-[98]">
         {/* Hamburger Menu */}
         <button
           ref={buttonRef}
