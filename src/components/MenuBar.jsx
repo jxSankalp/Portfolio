@@ -117,9 +117,9 @@ const MenuBar = () => {
                   {[
                     {
                       name: "LinkedIn",
-                      link: "https://linkedin.com/in/ben-böckmann-296293265",
+                      link: "https://www.linkedin.com/in/sankalp-jain-a8b0b0283/",
                     },
-                    { name: "Github", link: "https://github.com/bencodes07" },
+                    { name: "Github", link: "https://github.com/jxSankalp" },
                   ].map((item, index) => (
                     <motion.li
                       key={item.name}

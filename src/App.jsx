@@ -15,7 +15,6 @@ function App() {
       <About />
       <Projects />
       <div className="w-full h-[25vh] bg-white "></div>
-
       <Contact />
     </Router>
   );
