@@ -2,6 +2,7 @@ import { Mail, Linkedin } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Magnetic from "../utils/magnetic";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -27,29 +28,33 @@ const Contact = () => {
         </h1>
 
         <div className="flex justify-center gap-4 mb-16">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
-          >
-            <Mail className="w-5 h-5" />
-            <span>Email</span>
-          </a>
-
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
-          >
-            <Linkedin className="w-5 h-5" />
-            <span>LinkedIn</span>
-          </a>
-
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
-          >
-            <FaGithub className="w-5 h-5" />
-            <span>Github</span>
-          </a>
+          <Magnetic>
+            <a
+              href="mailto:jainsankalp523@gmail.com"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+              <span>Email</span>
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              href="https://www.linkedin.com/in/sankalp-jain-a8b0b0283/"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>LinkedIn</span>
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              href="https://github.com/jxSankalp"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
+            >
+              <FaGithub className="w-5 h-5" />
+              <span>Github</span>
+            </a>
+          </Magnetic>
         </div>
 
         <div ref={ref} className="space-y-2">

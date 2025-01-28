@@ -1,6 +1,6 @@
-import { ArrowUpRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import hii from "../assets/Images/hii.svg";
 
 function About() {
   const ref = useRef(null);
@@ -8,11 +8,11 @@ function About() {
 
   return (
     <motion.div
-      initial={{ y: "200px", opacity: 0 }}
+      initial={{ y: "150px", opacity: 0 }}
       animate={isInView ? { y: "0", opacity: 1 } : {}}
       exit={{ y: "0", opacity: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="relative min-h-[60vh] w-full bg-white flex flex-col overflow-hidden top-[-40vw]"
+      className="relative min-h-screen w-full bg-white flex flex-col overflow-hidden mt-[-40vw]"
       id="about"
     >
       <div className="w-full flex justify-center items-center ">
@@ -27,13 +27,11 @@ function About() {
           <div className="text-5xl font-bold text-gray-900 mb-8">
             Hi, I&apos;m Sankalp.
           </div>
-          <button
+          <img
             ref={ref}
-            className="inline-flex items-center justify-center bg-black text-white px-6 rounded-full text-lg font-medium w-fit hover:bg-gray-800 transition-colors group py-2"
-          >
-            Get in Touch
-            <ArrowUpRight className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-          </button>
+            src={hii}
+            className="w-[8rem]"
+          />
         </div>
 
         {/* Right Column - Description */}
