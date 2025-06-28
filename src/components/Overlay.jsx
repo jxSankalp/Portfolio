@@ -71,11 +71,17 @@ function Overlay({ project }) {
           {/* Project Image */}
           <div className="w-full bg-black">
             <div className="w-full flex justify-center items-center p-8">
-              <img
-                src={project.imageSrc || "/placeholder.svg"}
-                alt={project.name}
-                className="w-full max-w-6xl rounded-2xl border border-gray-800"
-              />
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={project.imageSrc || "/placeholder.svg"}
+                  alt={project.name}
+                  className="w-full max-w-6xl rounded-2xl border border-gray-800"
+                />
+              </a>
             </div>
           </div>
         </div>
