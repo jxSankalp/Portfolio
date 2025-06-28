@@ -8,22 +8,35 @@ const projects = [
     id: 1,
     name: "Plinth",
     type: "Group",
-    imageSrc: "./src/assets/Images/Plinth.png",
-    description: "Project description here...",
+    imageSrc: "/images/Plinth.png",
+    link: "https://www.plinth.co.in/",
+    description: "An website for college festival Plinth.",
     technologies: {
       frontend: "React, TailwindCSS",
-      backend: "Node.js, MongoDB",
     },
   },
   {
     id: 2,
     name: "Portfolio",
     type: "Solo",
-    imageSrc: "./src/assets/Images/Portfolio.png",
+    imageSrc: "/images/Portfolio.png",
+    link: "https://portfolio-sankalp.vercel.app/",
     description: "Portfolio project showcasing my work.",
     technologies: {
+      frontend: "React.js, TailwindCSS",
+    },
+  },
+  {
+    id: 3,
+    name: "Yoom",
+    type: "Solo",
+    imageSrc: "/images/image.png",
+    link: "https://video-call-bay.vercel.app/",
+    description:
+      "A social media platform for video calling and meeting scheduling.",
+    technologies: {
       frontend: "Next.js, TailwindCSS",
-      backend: "Express, PostgreSQL",
+      backend: "Next.js, MongoDB , Clerk , Streamio Sdk",
     },
   },
 ];
@@ -110,13 +123,14 @@ export default function Projects() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <img
-              src={activeProject.imageSrc || "/placeholder.svg"}
-              alt={activeProject.name}
-              width={300}
-              height={300}
-              className="rounded-lg shadow-lg"
-            />
+            
+              <img
+                src={activeProject.imageSrc || "/placeholder.svg"}
+                alt={activeProject.name}
+                width={300}
+                height={300}
+                className="rounded-lg shadow-lg cursor-pointer transition-transform duration-200 hover:scale-105"
+              />
           </motion.div>
         )}
       </AnimatePresence>
